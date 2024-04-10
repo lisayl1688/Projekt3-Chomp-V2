@@ -4,6 +4,30 @@
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(./fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: RockSalt-Regular;
+    src: url(./fonts/RockSalt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito-Black;
+    src: url(./fonts/Nunito-Black.ttf);
+}
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url(./fonts/Nunito-Bold.ttf);
+}
+
 header {
     position: relative;
 }
@@ -13,6 +37,7 @@ header {
     position: absolute;
     top: 5px;
     right: 140px;
+    font-family: RockSalt-Regular;
 }
 
 .headerText {
@@ -21,16 +46,17 @@ header {
     top: 70px;
     right: 30px;
     text-align: end;
-    /*font-family: ;*/
+    font-family: Nunito-Black;
     font-size: 16px;
+    color: #DF8480;
 }
 
 .obenHund {
     background-image: url(./img/bild1.jpg);
-    height: 87vh;
+    height: 85vh;
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .zwischenText {
@@ -38,6 +64,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    font-family: Nunito-Black;
 }
 
 .sectionSteps {
@@ -46,11 +73,13 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    font-family: Nunito-Bold;
 }
 
 .zahlen {
     color: #DF8480;
     padding: 10px;
+    font-size: 48px;
 }
 
 .hundBetteltFutter img {
@@ -66,6 +95,7 @@ header {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+    font-family: Nunito-Bold;
 }
 
 .locally {
@@ -91,6 +121,7 @@ header {
     margin-bottom: 30px;
     padding: 0 20px;
     text-align: center;
+    font-family: Nunito-Regular;
 }
 
 footer {
@@ -101,6 +132,7 @@ footer {
 .footerText {
     padding: 10px 30px;
     text-align: center;
+    font-family: Nunito-Bold;
 }
 
 .buttons {
@@ -108,6 +140,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     margin: 20px 40px;
+    font-family: Nunito-Bold;
 }
 
 .button{
@@ -126,6 +159,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 50px;
+    font-family: Nunito-Bold;
 }
 
 .icons {
@@ -163,6 +197,10 @@ footer {
     .steps {
         display: flex;
         align-items: center;
+    }
+
+    .zahlen {
+        font-size: 48px;
     }
 
     .werbung {
@@ -222,6 +260,7 @@ footer {
         width: 100vw;
         background-color: white;
         z-index: 99;
+        font-size: 24px;
     }
 
     header {
@@ -252,6 +291,7 @@ footer {
         z-index: 99;
         font-size: 36px;
         width: 20vw;
+        color: white;
     }
 
     .zwischenText {
@@ -288,7 +328,10 @@ footer {
 
     .hundBetteltFutter img {
         height: 30vh;
-        width: 30vw;
+        width: 25vw;
+        border-radius: 10px;
+        position: absolute;
+        left: 60px;
     }
 
     .food {
@@ -341,7 +384,7 @@ footer {
         border-radius: 40px;
         width:35em;
         left: 30em;
-        top: 147em;
+        top: 154em;
     }
 
     .iconEnde {
